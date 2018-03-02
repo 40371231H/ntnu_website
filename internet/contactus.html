@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>聯絡我們</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Hege Refsnes">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="#introduction">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="north/taipeiMap.html">台北</a></li>
+                        <li><a href="north/taoyuanMap.html">桃園</a></li>
+                        <li><a href="north/hsinchuMap.html">新竹</a></li>
+                        <li><a href="north/miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="central/taichungMap.html">台中</a></li>
+                        <li><a href="central/changhuaMap.html">彰化</a></li>
+                        <li><a href="central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="south/chiayiMap.html">嘉義</a></li>
+                        <li><a href="south/tainanMap.html">台南</a></li>
+                        <li><a href="south/kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+                <li><a href="">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+
+        <div class="" style="text-align:center">
+            <img src="img/entnu.png" alt="NTNU Logo" style="height:80%;width:80%;">
+        </div>
+
+        <div class="box01">
+            <h1>CONTACT US</h1>
+            <h1>如有查詢，歡迎聯絡！</h1>
+        </div>
+
+        <div id="map" style="width:100%;height:500px"></div>
+        <script>
+            function initMap() {
+                var myLatLng = {
+                    lat: 25.025951,
+                    lng: 121.527489
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: myLatLng
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Hello World!'
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD65Wp7n0PcmiSqlxZu6LqY1GkxGz5fMnE&signed_in=true&callback=initMap"></script>
+
+        <div class="box02">
+            <h1>CONTACT INFOMATION</h1>
+            <h2 style="color:rgb(72, 14, 14)">國立臺灣師範大學|科技應用與人力資源發展學系</h2>
+            <p style="font-size:120%">
+                地址：106 台北市和平東路一段162號
+                <br> 電話：(02) 7734 -3439
+                <br> 傳真：(02) 2392-1015
+            </p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <footer class="box01">Copyright &copy; National Taiwan Normal University</footer>
+
+</body>
+
+</html>

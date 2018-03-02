@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html" ; charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Delius" type="text/css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="dist/js/bootstrap.min.js"></script>
+            <script src="test.js"></script>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link href="htr.css" rel="stylesheet" type="text/css">
+    
+   
+</head>
+
+<body id="fullpage" data-spy="scroll" data-target=".navbar" >
+    <div id="banner" class="jumbotron">
+
+        <div id="myCarousel" class="carousel slide  " data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="image" src="http://i.imgur.com/Eez4953.jpg">
+
+                </div>
+
+                <div class="item">
+
+                    <img id="one" class="image" src="https://www.settour.com.tw/act/hsr/pic2/ntop7-2.jpg">
+                </div>
+
+                <div class="item">
+                    <img class="image" src="https://www.eztravel.com.tw/package1/hs_rail/images/960X400-0519.jpg">
+
+                </div>
+
+                <div class="item">
+                    <img class="image" src="http://www.citytalk.tw/upload/event/0/84/32d/pb/img/71773/906x277-exactly.jpg">
+
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <div id="introduction" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12>">
+                <h1>高鐵輕鬆行<br>暢遊全台灣</h1></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+        </button>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#banner">Welcome</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="#introduction">Home</a></li>
+                <li><a href="#photo">各站資訊</a></li>
+                <li><a href="#price">票價優惠資訊</a></li>
+                <li><a href="#intro">相關網站</a></li>
+                <li><a href="#contact">聯絡高鐵客服</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="north/taipeiMap.html">台北</a></li>
+                        <li><a href="north/taoyuanMap.html">桃園</a></li>
+                        <li><a href="north/hsinchuMap.html">新竹</a></li>
+                        <li><a href="north/miaoliMap.html">苗栗</a></li>
+                    </ul>
+                
+                </li>
+        
+    
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="central/taichungMap.html">台中</a></li>
+                        <li><a href="central/changhuaMap.html">彰化</a></li>
+                        <li><a href="central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="south/chiayiMap.html">嘉義</a></li>
+                        <li><a href="south/tainanMap.html">台南</a></li>
+                        <li><a href="south/kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+<li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div id="photo" class="container-fluid">
+   <div class="row">
+                    <div class="col-sm-12">
+        <nav id="train" class="navbars  navbar-inverse ">
+      
+            <button type="button" class="navbars-toggle" data-toggle="collapse" data-target="#step">
+
+                各站資訊
+                <span class="caret"></span>
+
+            </button>
+
+
+
+            <div class="collapse navbar-collapse " id="step">
+              
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#1" id="jqtextcall1">
+
+                            <div id="gung" class="trainstation">
+
+                                <p>南港</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall2" href="#2">
+                            <div id="taipei" class="trainstation">
+
+                                <p>台北</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall3" href="#3">
+                            <div id="banqiao" class="trainstation">
+                                <p>板橋</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall4" href="#4">
+                            <div id="taoyuan" class="trainstation">
+                                <p>桃園</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall5" href="#5">
+                            <div id="hsinchu" class="trainstation">
+                                <p>新竹</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall6" href="#6">
+                            <div id="miaoli" class="trainstation">
+                                <p>苗栗</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall7" href="#7">
+                            <div id="taichung" class="trainstation">
+                                <p>台中</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall8" href="#8">
+                            <div id="changhua" class="trainstation">
+                                <p>彰化</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall9" href="#9">
+                            <div id="yunlin" class="trainstation">
+                                <p>雲林</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall10" href="#10">
+                            <div id="chiayi" class="trainstation">
+                                <p>嘉義</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall11" href="#11">
+                            <div id="tainan" class="trainstation">
+                                <p>台南</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="jqtextcall12" href="#12">
+                            <div id="zuoying" class="trainstation">
+                                <p>左營</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                    </div>
+               
+        </nav>
+
+ </div>
+            </div>
+        <div id="contentbox">
+
+            <div id="hiddenbox1">
+                <div class="contentfont" >
+                     
+                    <div class="row">
+                       
+                       <div class="col-sm-6 text-center">
+                            <img class="mm"  src="http://www.thsrc.com.tw/UploadFiles/StationInfo/5ef5a8e6-786d-4dba-aeba-4d4af487a073.jpg" />
+                        </div>
+                           
+                        
+                        <div id="1" class="col-sm-4 ">
+
+                            <h1><strong>南港站</strong></h1>
+                            <ul>
+                               <li>台北市南港區南港路一段313號</li>
+                                <li>營業時間：05:50 ~ 24:00</li>
+                                <li>售票時間：05:50 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                          
+                          
+                                
+                        <div class="col-sm-2  text-center">
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/2f940836-cedc-41ef-8e28-c2336ac8fe68" target="_blank"><img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+                        </div>
+                           
+                    </div>
+
+                </div>
+            </div>
+            
+           
+            <div id="hiddenbox2">
+                <div  id="2" class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.twword.com/uploads/wiki/c4/65/760667_0.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>台北站</strong></h1>
+                            <ul>
+                                <li>台北市北平西路3號</li>
+                                <li>營業時間：06:00 ~ 24:00</li>
+                                <li>售票時間：06:00~末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/977abb69-413a-4ccf-a109-0272c24fd490" target="_blank"><img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox3">
+                <div class="contentfont" id="3">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="https://www.thsrc.com.tw/UploadFiles/StationInfo/e3143ec5-0df0-4ab6-a763-9ed10d1fa715.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>板橋站</strong></h1>
+                            <ul>
+                                <li>新北市板橋區縣民大道二段7號</li>
+                                <li>營業時間：06:00 ~ 24:00</li>
+                                <li>售票時間：06:00~末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/e6e26e66-7dc1-458f-b2f3-71ce65fdc95f" target="_blank"><img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="hiddenbox4">
+                <div class="contentfont" id="4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm"  src="http://www.thsrc.com.tw/UploadFiles/StationInfo/6f3b0fd7-2010-4049-8c76-b4263b951ebd.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>桃園站</strong></h1>
+                            <ul>
+                                <li>桃園市中壢區高鐵北路一段6號</li>
+                                <li>營業時間：06:20 ~ 23:45</li>
+                                <li>售票時間：06:20 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/fbd828d8-b1da-4b06-a3bd-680cdca4d2cd" target="_blank"><img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox5">
+                <div class="contentfont" id="5">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.megafacade.com.tw/webadmin/upload/%E5%8F%B0%E7%81%A3%E9%AB%98%E9%90%B5%E6%96%B0%E7%AB%B9%E7%AB%99.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>新竹站</strong></h1>
+                            <ul>
+                                <li>新竹縣竹北市高鐵七路6號</li>
+                                <li>營業時間：06:30 ~ 23:45</li>
+                                <li>售票時間：06:30~末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/a7a04c89-900b-4798-95a3-c01c455622f4" target="_blank"><img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox6">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="https://www.thsrc.com.tw/UploadFiles/StationInfo/b1ef5979-d52f-4317-869a-92b786844826.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>苗栗站</strong></h1>
+                            <ul>
+                                <li>苗栗縣後龍鎮高鐵三路268號</li>
+                                <li>營業時間：06:20 ~ 23:45</li>
+                                <li>售票時間：06:20 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/e8fc2123-2aaf-46ff-ad79-51d4002a1ef3" target="_blank"><img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" />
+                                </a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox7">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.thsrc.com.tw/UploadFiles/StationInfo/6323a97e-3243-4ac8-9510-72193e086f71.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>台中站</strong></h1>
+                            <ul>
+                                <li>台中市烏日區站區二路8號</li>
+                                <li>營業時間：06:00 ~ 24:00</li>
+                                <li>售票時間：06:00 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/3301e395-46b8-47aa-aa37-139e15708779" target="_blank">
+                                   <img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+                             
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox8">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.thsrc.com.tw/UploadFiles/StationInfo/b6a92cc1-b236-4e4b-8183-ca1ca41d6b41.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>彰化站</strong></h1>
+                            <ul>
+                                <li>彰化縣田中鎮站區路二段99號</li>
+                                <li>營業時間：06:20 ~ 24:00</li>
+                                <li>售票時間：06:20~末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/38b8c40b-aef0-4d66-b257-da96ec51620e" target="_blank">
+                                    <img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox9">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.thsrc.com.tw/UploadFiles/StationInfo/15aafc9d-6025-482a-9ea4-f09bb9f9bdd6.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>雲林站</strong></h1>
+                            <ul>
+                                <li>雲林縣虎尾鎮站前東路301號</li>
+                                <li>營業時間：06:30 ~ 23:45</li>
+                                <li>售票時間：06:30 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/5f4c7bb0-c676-4e39-8d3c-f12fc188ee5f" target="_blank">
+                                   <img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox10">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.thsrc.com.tw/UploadFiles/StationInfo/87c6130d-f1aa-4b00-a16f-be38af7f7232.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>嘉義站</strong></h1>
+                            <ul>
+                                <li>嘉義縣太保市高鐵西路168號</li>
+                                <li>營業時間：06:20 ~ 23:45</li>
+                                <li>售票時間：06:20~末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/60831846-f0e4-47f6-9b5b-46323ebdcef7" target="_blank">
+                                   <img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+                       
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox11">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img class="mm" src="http://www.thsrc.com.tw/UploadFiles/StationInfo/d1c7565f-3536-4c47-bab3-f34d9bce411e.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>台南站</strong></h1>
+                            <ul>
+                                <li>台南市歸仁區歸仁大道100號</li>
+                                <li>營業時間：06:00 ~ 24:00</li>
+                                <li>售票時間：06:00 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/Prospect/9c5ac6ca-ec89-48f8-aab0-41b738cb1814" target="_blank">
+                                  <img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+                            
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="hiddenbox12">
+                <div class="contentfont">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img  class="mm" src="http://www.one-home.com.tw/img_04know/know0704h225i004.jpg" />
+                        </div>
+                        <div class="col-sm-4 ">
+
+
+                            <h1><strong>左營站</strong></h1>
+                            <ul>
+                                <li>高雄市左營區高鐵路105號</li>
+                                <li>營業時間：05:50 ~ 24:00</li>
+                                <li>售票時間：05:50 ~ 末班車發車時間</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2  text-center">
+
+                            <div class="button text-center">
+                                <a href="http://www.thsrc.com.tw/tw/StationInfo/prospect/f2519629-5973-4d08-913b-479cce78a356" target="_blank">
+                                <img src="https://ericssoners.files.wordpress.com/2012/10/more-info-free-png-image.png?w=160&h=80" alt="更多資訊" /></a>
+                 
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="price">
+        <div class="row">
+            <div class="col-sm-4 ">
+                <h1><strong>票價優惠資訊</strong></h1>
+            </div>
+            <div class="col-sm-8 ">
+                <table class="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr style="background-color:#666666">
+                            <th>票種</th>
+                            <th>票價優惠</th>
+                            <th>標準車廂票價</th>
+                            <th>商務車廂票價</th>
+                            <th>詳細說明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th style="background:orange">普通票/全票</th>
+                            <td>--</td>
+                            <td>$40~$1530</td>
+                            <td>$205~$2000</td>
+                            <td rowspan="4" class="text-center">
+                                <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/743c51ac-124d-4b1a-a57b-1fd820848032" target="_blank">
+                                    <p id="ttable">詳細資訊</p>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="background:#E97BA4">優待票</th>
+                            <td>五折</td>
+                            <td>$20~$765</td>
+                            <td>$130~$1250</td>
+
+                        </tr>
+                        <tr>
+                            <th style="background:#22AAFF">自由座</th>
+                            <td>--</td>
+                            <td>$15~$1480</td>
+                            <td>無提供商務車廂</td>
+
+                        </tr>
+                        <tr>
+                            <th style="background:#FFCC00">團體票</th>
+                            <td>95折</td>
+                            <td>$35~$1450</td>
+                            <td>$190~$1900</td>
+
+                        </tr>
+                        <tr>
+                            <th style="background:#86BF41">回數票</th>
+                            <td>約85折</td>
+                            <td>$935~$10300</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/7039d17d-1463-4c14-ad93-4d491dedcad5" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#FF6600">定期票</th>
+                            <td>約48折</td>
+                            <td>$3965~$43510</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/b7b46e29-424c-4fc4-8ec7-0ab3031f2c9c" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#9470FF">早鳥優惠</th>
+                            <td>65折起</td>
+                            <td>$25~$1375</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/7039d17d-1463-4c14-ad93-4d491dedcad5" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#33D7FF">交通聯票</th>
+                            <td>75折起</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/5af4ceb8-4c6f-44ec-b02d-0c398c0ad917" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#FFCC00">活動套票</th>
+                            <td>約8折起</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/d794b386-96a7-445c-8a50-160862a037e9" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#FF3366">大學生優惠</th>
+                            <td>5折起</td>
+                            <td>$20~$1300</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#9ACD32">25人團體優惠</th>
+                            <td>7折</td>
+                            <td>$65~$1070</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/89a14510-7982-4b5e-88af-074305bfefed" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#00BFFF">校外教學優惠</th>
+                            <td>4折起</td>
+                            <td>$50~$1070</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/ca09cf02-8f65-4f87-b25e-31cb9c0e187b" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#CD5555">平日離峰優惠</th>
+                            <td>96折</td>
+                            <td>$35~$1465</td>
+                            <td>無提供商務車廂</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/e75eb64d-0cbf-42de-a7fb-dc43116be985" target="_blank">詳細資訊</a></td>
+                        </tr>
+                        <tr>
+                            <th style="background:#8B658B">飯店聯票</th>
+                            <td>8折</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td class="text-center"><a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/c2bae549-bc17-4373-a43a-3496780aa4ea" target="_blank">詳細資訊</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div id="intro">
+        <div class="row text-center">
+            <p class="introp"><strong>高  鐵  相  關  網  站<br></strong></p>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>高鐵官網</strong></p>
+                <a href="http://www.thsrc.com.tw/tw/Home/Index?force=1" target="_blank">
+                    <img src="screencapture-thsrc-tw-tw-Home-Index-1480696273580.png" class="person"></a>
+                <hr>
+                <p>
+                    <br>
+                </p>
+                <p class="text-center"><strong>高鐵假期</strong></p>
+                <a href="http://tholiday.thsrc.com.tw/TC/index.aspx" target="_blank">
+                    <img src="screencapture-tholiday-thsrc-tw-TC-index-aspx-1480772620514.png" class="person"></a>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>網路訂票</strong></p>
+                <a href="https://irs.thsrc.com.tw/IMINT?locale=tw" target="_blank"><img src="screencapture-irs-thsrc-tw-IMINT-1480697172229.png" class="person"></a>
+                <hr>
+                <p class="introp"><strong>高  鐵  遊  台  灣<br></strong></p>
+                <p class="text-center"><strong>行程資訊</strong></p>
+                <a href="http://tholiday.thsrc.com.tw/TC/search.aspx?ThemeID=34fb4d48-58d4-447d-ad05-ab31fd3e84c9" target="_blank">
+                    <img src="screencapture-tholiday-thsrc-tw-TC-search-aspx-1480773089668.png" class="person"></a>
+
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>高鐵臉書</strong></p>
+                <a href="https://www.facebook.com/thsrco/?fref=ts" target="_blank">
+                    <img src="%E6%9C%AA%E5%91%BD%E5%90%8D.png" class="person"></a>
+                <hr>
+                <p>
+                    <br>
+                </p>
+                <p class="text-center"><strong>飯店資訊</strong></p>
+                <a href="http://www.thsrc.com.tw/tw/Article/ArticleContent/bbb690c1-d388-4692-bc95-0d12a81b1b81" target="_blank">
+                    <img src="screencapture-thsrc-tw-tw-Article-ArticleContent-bbb690c1-d388-4692-bc95-0d12a81b1b81-1480772857985.png" class="person"></a>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <span class="glyphicon glyphicon-phone-alt " aria-hidden="true"></span>
+                <p>客服專線:4066-3000</p>
+                <p>苗栗:4266-3000</p>
+                <p>台東、金門:4666-3000</p>
+                <p>馬祖及行動電話:02-4066-3000</p>
+                <p>服務時間:06:00~24:00</p>
+            </div>
+            <div class="col-sm-6">
+                <span class="glyphicon glyphicon-comment " aria-hidden="true"></span>
+                <p>語音訂位:4066-0000</p>
+                <p>苗栗:4266-0000</p>
+                <p>台東、金門:4666-0000</p>
+                <p>馬祖及行動電話:02-4066-0000</p>
+                <p>服務時間:00:00~24:00</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" </div></div>
+        </div>
+
+</body>
+
+
+
+</html>

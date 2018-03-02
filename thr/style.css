@@ -1,0 +1,22 @@
+.box01 {
+    background-color: rgb(72, 14, 14);
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.box02 {
+    background-color: rgb(230, 245, 144);
+    color: #000000;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+p,
+h1,
+h2 {
+    font-family: verdana;
+    text-align: center;
+}
+

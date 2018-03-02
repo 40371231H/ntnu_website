@@ -1,0 +1,53 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.gm-style-iw p {
+    width: 101%;
+}
+
+div.img img {}
+
+div.title p {
+    width: 180px;
+    height: 180px;
+    font-size: 24px;
+    background-color: rgba(50%, 50%, 50%, 0.5);
+    display: inline;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+div.content {
+    width: 80px;
+    height: 80px;
+    border-radius: 99em;
+    background-color: rgba(128, 128, 128, 0.7);
+    border: 2px;
+    display: inline;
+    object-fit: cover;
+}

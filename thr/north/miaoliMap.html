@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css" /> </head>
+
+<body onload="initialize()">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="../htr.html">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="taipeiMap.html">台北</a></li>
+                        <li><a href="taoyuanMap.html">桃園</a></li>
+                        <li><a href="hsinchuMap.html">新竹</a></li>
+                        <li><a href="miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../central/taichungMap.html">台中</a></li>
+                        <li><a href="../central/changhuaMap.html">彰化</a></li>
+                        <li><a href="../central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../south/chiayiMap.html">嘉義</a></li>
+                        <li><a href="../south/tainanMap.html">台南</a></li>
+                        <li><a href="../south/kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+                               <li><a href="../contact.html">聯絡我們</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:150px;">
+            <div class="col-md-4 col--12 text-center"> </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 景點介紹 </button>
+            </div>
+            <div class="col-md-4 text-center"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">玉清宮</h4> </div>
+                    <div class="modal-body container"> <img src="../玉清宮.jpg" width="50%" height="50%" />
+                        <p>地址：苗栗縣苗栗市玉清里為民街35號
+                            <br/> 介紹：
+                            <br/> 苗栗玉清宮主祀神祇為關聖帝君，也就是信眾口中稱的「恩主公」，宮中的同祀神祇則有呂恩
+                            <br/>主、城隍爺與觀世音菩薩。玉清宮創建於民國前六年，民國二十四年地震震損廟宇，當時只有
+                            <br/>簡單的修建，直到民國五十六年才由信徒募捐重建竣工，莊嚴肅穆的玉清宮不僅吸引更多信眾
+                            <br/>前來謁拜，也帶動了周邊的商圈經濟。玉清宮旁有座玉清公園，園中最為特別的地方就是石山
+                            <br/>上有一座騎乘赤兔馬的巨型關聖帝君，不僅身穿戎裝，手上更握著青龍偃月刀，就像是在守護
+                            <br/>著地方上的善良民眾。
+                             </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var miaoliStation = {
+                lat: 24.605747
+                , lng: 120.825304
+            };
+            var yucingTemple = {
+                lat: 24.564752
+                , lng: 120.826709
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: miaoliStation
+                , scrollwheel: false
+                , zoom: 7
+            });
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: yucingTemple
+                , origin: miaoliStation
+                , travelMode: 'DRIVING'
+            };
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == 'OK') {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKvacU-4oh1bPIRa5vBNelmlClQzafjDQ&callback=initMap">
+    </script>
+</body>
+
+</html>

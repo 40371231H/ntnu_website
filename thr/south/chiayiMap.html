@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body onload="initialize()">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="../htr.html">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../north/taipeiMap.html">台北</a></li>
+                        <li><a href="../north/taoyuanMap.html">桃園</a></li>
+                        <li><a href="../north/hsinchuMap.html">新竹</a></li>
+                        <li><a href="../north/miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../central/taichungMap.html">台中</a></li>
+                        <li><a href="../central/changhuaMap.html">彰化</a></li>
+                        <li><a href="../central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chiayiMap.html">嘉義</a></li>
+                        <li><a href="tainanMap.html">台南</a></li>
+                        <li><a href="kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+                 <li><a href="../contact.html">聯絡我們</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:150px;">
+            <div class="col-md-4 col--12 text-center"> </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 景點介紹 </button>
+            </div>
+            <div class="col-md-4 text-center"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">高跟鞋教堂</h4> </div>
+                    <div class="modal-body container"> <img src="../高跟鞋教堂.jpg" width="50%" height="50%" />
+                        <p>高跟鞋教堂
+                            <br/>地址：625台灣嘉義縣布袋鎮海興街
+                            <br/>介紹：
+                            <br/>「高跟鞋教堂」坐落嘉義縣布袋海景公園，高約17公尺、寬11公尺，是金氏世界紀錄認證
+                            <br/>「以鞋子為造型的最大建築物」，結構為一千兩百六十九根鋼架，外表則利用320片玻璃組成，
+                            <br/>外觀呈現閃亮亮的水藍色，並可進入內部瀏覽，周圍亦散落數座具特色之裝置藝術。
+                            <br/>構思背景是一段關於烏腳病女孩的感人故事:
+                            <br/>早期雲嘉南濱海地區流行烏腳病，嘉義有位年輕女孩，在結婚前夕，烏腳病惡化，為了保命，
+                            <br/>只能截去雙足，這名年輕女孩已說好的婚事，也隨著截去雙足消失，終其一生，只在芥菜種教
+                            <br/>會中，編織草蓆，孤獨一生。
+                            <br/>「高跟鞋教堂」帶著翻轉貧窮，走出幸福的意涵，得了烏腳病的女孩，雖然無法穿上高跟鞋踏
+                            <br/>上婚姻之路，但透過教會協助下，重新過自己生活，因此，隨著教堂完成，這幸福的一步已經
+                            <br/>邁出。</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var chiayiStation = {
+                lat: 23.459554
+                , lng: 120.323330
+            };
+            var crystalHighHeelShapedChurch = {
+                lat: 23.377850
+                , lng: 120.148730
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: chiayiStation
+                , scrollwheel: false
+                , zoom: 7
+            });
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: crystalHighHeelShapedChurch
+                , origin: chiayiStation
+                , travelMode: 'DRIVING'
+            };
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == 'OK') {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKvacU-4oh1bPIRa5vBNelmlClQzafjDQ&callback=initMap">
+    </script>
+</body>
+
+</html>

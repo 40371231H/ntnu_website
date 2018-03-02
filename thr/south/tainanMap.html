@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body onload="initialize()">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="../htr.html">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../north/taipeiMap.html">台北</a></li>
+                        <li><a href="../north/taoyuanMap.html">桃園</a></li>
+                        <li><a href="../north/hsinchuMap.html">新竹</a></li>
+                        <li><a href="../north/miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../central/taichungMap.html">台中</a></li>
+                        <li><a href="../central/changhuaMap.html">彰化</a></li>
+                        <li><a href="../central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chiayiMap.html">嘉義</a></li>
+                        <li><a href="tainanMap.html">台南</a></li>
+                        <li><a href="kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+                  <li><a href="../contact.html">聯絡我們</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:150px;">
+            <div class="col-md-4 col--12 text-center"> </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 景點介紹 </button>
+            </div>
+            <div class="col-md-4 text-center"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">奇美博物館</h4> </div>
+                    <div class="modal-body container"> <img src="../奇美博物館.jpg" width="50%" height="50%" />
+                        <p>奇美博物館
+                            <br/>地址：71755臺南市仁德區文華路二段66號（台南都會公園）
+                            <br/>營業時間：9:30~17:30（每週一休館）
+                            <br/>交通資訊：轉搭高鐵快捷公車（H31臺南市政府線）至奇美博物館站下車，由園區主入口（地
+                            <br/>圖指標英文編號A），步行約15分鐘，即可抵達博物館入口（地圖指標英文編號Ｉ）。
+                            <br/>介紹：
+                            <br/>奇美博物館，位於臺灣臺南市仁德區，為奇美實業創辦人許文龍創立，是臺灣館藏最豐富的私
+                            <br/>人博物館、美術館。以典藏西洋藝術品為主，展出藝術、樂器、兵器與自然史四大領域。
+                            <br/>樂器領域:
+                            <br/>擁有全球數量最多小提琴收藏，其中包含世界各大製琴師名作，藝術方面，典藏台灣最完整西
+                            <br/>方繪畫雕塑，目標為建構出基礎西洋藝術史脈絡。
+                            <br/>兵器領域:
+                            <br/>展示亞洲最完整之各國珍貴古兵器，透過戰爭兵器呈現歷史與科技演進史。
+                            <br/>自然史領域:
+                            <br/>擁有亞洲最大動物標本收藏，範圍涵蓋五大洲哺乳類及鳥類。 </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var tainanStation = {
+                lat: 22.924876153845613
+                , lng: 120.2856179136168
+            };
+            var chimeiMuseum = {
+                lat: 22.93459422536625
+                , lng: 120.22448501471523
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: tainanStation
+                , scrollwheel: false
+                , zoom: 7
+            });
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: chimeiMuseum
+                , origin: tainanStation
+                , travelMode: 'DRIVING'
+            };
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == 'OK') {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKvacU-4oh1bPIRa5vBNelmlClQzafjDQ&callback=initMap">
+    </script>
+</body>
+
+</html>

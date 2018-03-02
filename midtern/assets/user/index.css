@@ -1,0 +1,60 @@
+body {
+    background: #FFF;
+    font-family: "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", "新細明體", "PMingLiU", sans-serif;
+    font-size: 16px;
+    color: #3C3C3C;
+}
+
+#header {
+    background-color: azure;
+    margin-top: 50px;
+}
+
+#logo {
+    float: left;
+}
+
+#header_nav {
+    float: right;
+}
+
+#header_nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+#header_nav ul li a {
+    text-decoration: none;
+    padding: 12px 36px;
+    color: #666666;
+}
+
+#main {
+    float: none;
+}
+
+.navbar-center {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-collapse-center {
+  text-align: center;
+}
+
+#main_nav {
+    
+}
+
+#main_nav ul li{
+    list-style-type: none;
+    float: left;
+}
+
+#main_nav ul li a{
+    text-decoration: none;
+    padding: 12px 36px;
+    color: #666666;
+}
+

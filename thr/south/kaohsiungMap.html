@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body onload="initialize()">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="../htr.html">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../north/taipeiMap.html">台北</a></li>
+                        <li><a href="../north/taoyuanMap.html">桃園</a></li>
+                        <li><a href="../north/hsinchuMap.html">新竹</a></li>
+                        <li><a href="../north/miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../central/taichungMap.html">台中</a></li>
+                        <li><a href="../central/changhuaMap.html">彰化</a></li>
+                        <li><a href="../central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chiayiMap.html">嘉義</a></li>
+                        <li><a href="tainanMap.html">台南</a></li>
+                        <li><a href="kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+               <li><a href="../contact.html">聯絡我們</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:150px;">
+            <div class="col-md-4 col--12 text-center"> </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 景點介紹 </button>
+            </div>
+            <div class="col-md-4 text-center"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">高雄物產館</h4> </div>
+                    <div class="modal-body container"> <img src="../高雄物產館.jpg" width="50%" height="50%" />
+                        <p>高雄物產館
+                            <br/>地址：高雄市左營區翠華路1435號
+                            <br/>營業(開放)時間：蓮潭旗艦店 9:30~21:30
+                            <br/>交通資訊：由高鐵左營站下車後，轉搭公車紅35路到蓮潭會館站下車，
+                            <br/>步行5分鐘可抵蓮潭旗艦店；或轉乘台鐵到左營站下車後，步行10分鐘抵達目的地。
+                            <br/>介紹：
+                            <br/>高雄物產館蓮潭旗鑑店位於高雄市左營區蓮池潭湖畔，南鄰龜山、北倚半屏山，總面積約為42
+                            <br/>公頃，湖畔有孔廟、啟明堂、春秋閣、五里亭、龍虎塔等。蓮池潭東岸為寬敞的環湖道路，西
+                            <br/>岸即左營的舊市街，聚集各式特產小吃店，非常熱鬧。
+                            <br/>蓮池潭畔旁為洲仔濕地公園，佔地面積約為10公頃，為擁有水生浮葉植物的生態環境，目前在
+                            <br/>洲仔濕地公園已有約65種以上鳥類和其他水生植物在這裡發展出特有的生態。以翠橋連結的原
+                            <br/>生植物園，此園區有關生態、植物、與生態工法的知識，以及包含食衣住行、宗教、習俗等日
+                            <br/>常生活中常用的植物認識。
+                            <br/>蓮池潭自行車道從愛河中段至蓮池潭畔，總長度約為20.6公里，是民眾假日鐵馬行的好去處；
+                            <br/>此外蓮池潭園區內設有親子遊樂區也是不錯的選擇喔!!高雄物產館區域劃分為輕食區、販售區、
+                            <br/>廚藝教室、DIY教室、故事館、視聽教室等，停車方便、空間寬敞舒適、乾淨、乾淨明亮，放
+                            <br/>眼望去風景優美，綠樹林立，讓忙碌都市生活中，多一個休閒旅遊及輕鬆用餐購物的好去處。
+                            <br/>高雄市自縣市合併後，有關農業產銷政策需結合其農特產品之多元性、農業人文歷史、優質生
+                            <br/>鮮之農產加工品及安全檢測等特色，塑造高雄首選之行銷品牌，並以農業耆老之故事文化吸引
+                            <br/>年輕族群了解本市文化，進而建立農業價值。經以高雄首選之主視覺意象規劃設置高雄物產館
+                            <br/>：高鐵左營店、高雄郵局店及蓮潭旗艦店等行銷中心，藉以推展及銷售本市農業重要政策及農
+                            <br/>特產品。
+                            <br/>高雄物產館展售之相關商品，係由高雄市政府農業局主辦，由大高雄轄區內各地區農漁會與在
+                            <br/>地食材加工業者直接供應之特色產品，都是代表高雄之最佳伴手禮！歡迎大家閒暇之餘攜伴來
+                            <br/>高雄物產館蓮潭旗艦店參觀選購及享用美食，可吃可看又可玩，保證您一定不虛此行！ </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var kaohsiungStation = {
+                lat: 22.687431
+                , lng: 120.307434
+            };
+            var kaohsiungPropertyHall = {
+                lat: 22.679624
+                , lng: 120.297430
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: kaohsiungStation
+                , scrollwheel: false
+                , zoom: 7
+            });
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: kaohsiungPropertyHall
+                , origin: kaohsiungStation
+                , travelMode: 'DRIVING'
+            };
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == 'OK') {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKvacU-4oh1bPIRa5vBNelmlClQzafjDQ&callback=initMap">
+    </script>
+</body>
+
+</html>

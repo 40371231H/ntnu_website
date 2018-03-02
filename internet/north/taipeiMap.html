@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css" /> </head>
+
+<body onload="initialize()">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="#introduction">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="taipeiMap.html">台北</a></li>
+                        <li><a href="taoyuanMap.html">桃園</a></li>
+                        <li><a href="hsinchuMap.html">新竹</a></li>
+                        <li><a href="miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../central/taichungMap.html">台中</a></li>
+                        <li><a href="../central/changhuaMap.html">彰化</a></li>
+                        <li><a href="../central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../south/chiayiMap.html">嘉義</a></li>
+                        <li><a href="../south/tainanMap.html">台南</a></li>
+                        <li><a href="../south/kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+                <li><a href="">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:150px;">
+            <div class="col-md-4 col--12 text-center"> </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 景點介紹 </button>
+            </div>
+            <div class="col-md-4 text-center"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">Taipei101</h4> </div>
+                    <div class="modal-body container"> <img src="../101.JPG" width="50%" height="50%" />
+                        <p>地址：台北市信義路五段7號
+                            <br/> 營業時間：
+                            <br/> 交通資訊：捷運 - 信義線「台北101站」4號出口／板南線「市政府站」2號出口步行約10分鐘
+                            <br/> 介紹： 一座傑出的地標建築，足以改變這個城市。
+                            <br/>如同帝國大廈之於紐約、艾菲爾鐵塔之於巴黎、更如晚近的金茂大廈之於上海。
+                            <br/>遊客於五樓售票處購買入場券後，可於排隊區拍攝登樓記念照，
+                            <br/>再搭乘金氏世界紀錄最快速恆壓電梯直上89樓觀景台。
+                            <br/>觀景台兩部專用超高速電梯以每分鐘1010公尺的速度，5樓搭乘僅需37秒（B1搭程僅需39秒）
+                            <br/>即可達89樓觀景台。
+                            <br/>標高382公尺的89樓觀景台，除擁有全方位絕佳的觀景視野外，並提供其他多項設施，
+                            <br/>包括：超高倍數望遠鏡、紀念照攝影服務、飲料吧、紀念品販售服務、世界最高郵筒等；
+                            <br/>同時更可看到世界最大、最重、也是唯一外露供參觀的風阻尼器。
+                            <br/>89樓往88樓為呈現台灣之美的科技多媒體通道，可270度看到台灣知名景點及經典台北101跨年煙火等。
+                            <br/>接續進入台北101鎮樓之寶風阻尼器區，可近距離觀賞世界最大：5.5公尺、最重：
+                            <br/>660公噸風阻尼器的完整主體結構，遊客可以最接近的距離與風阻尼器合影。
+                            <br/>參觀完世界最大風阻尼器區後，可進入全然不同的聚寶88世界，欣賞台灣獨有的精品寶石工藝。
+                            <br/>經由89樓樓梯到達91樓戶外觀景台，可感受全然不同的觀景體驗。
+                            <br/>遊客可在超高大樓的頂端感受高空風力，雲霧圍繞以及寬闊的視野，
+                            <br/>並以最近距離仰望大樓最高點508公尺高的塔尖。
+                            <br/>91樓室內放映室，播放大樓建置過程影片，以及今年跨年的煙火影片。 </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var taipeiMainStation = {
+                lat: 25.0479239
+                , lng: 121.517081
+            };
+            var taipei101 = {
+                lat: 25.03390794444973
+                , lng: 121.5623212147281
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: taipeiMainStation
+                , scrollwheel: false
+                , zoom: 7
+            });
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: taipei101
+                , origin: taipeiMainStation
+                , travelMode: 'DRIVING'
+            };
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == 'OK') {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKvacU-4oh1bPIRa5vBNelmlClQzafjDQ&callback=initMap">
+    </script>
+</body>
+
+</html>

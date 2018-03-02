@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css" /> </head>
+
+<body onload="initialize()">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <div class="navbar-header"> <a class="navbar-brand" href="#banner">Welcome</a> </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav " id="hostmenu">
+                <li class="active"><a href="../htr.html">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">北部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="taipeiMap.html">台北</a></li>
+                        <li><a href="taoyuanMap.html">桃園</a></li>
+                        <li><a href="hsinchuMap.html">新竹</a></li>
+                        <li><a href="miaoliMap.html">苗栗</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">中部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../central/taichungMap.html">台中</a></li>
+                        <li><a href="../central/changhuaMap.html">彰化</a></li>
+                        <li><a href="../central/yunlinMap.html">雲林</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">南部
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../south/chiayiMap.html">嘉義</a></li>
+                        <li><a href="../south/tainanMap.html">台南</a></li>
+                        <li><a href="../south/kaohsiungMap.html">左營</a></li>
+                    </ul>
+                </li>
+             <li><a href="../contact.html">聯絡我們</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="height:150px;">
+            <div class="col-md-4 col--12 text-center"> </div>
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 景點介紹 </button>
+            </div>
+            <div class="col-md-4 text-center"></div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <h4 class="modal-title" id="myModalLabel">小人國</h4> </div>
+                    <div class="modal-body container"> <img src="../小人國.jpg" width="50%" height="50%" />
+                        
+                        <div class="modal-body container"> <img src="../小人國營業時間.jpg" width="45%" height="55%" />
+                            <p style="font-family=">小人國主題樂園
+                            <br/>地址：325,桃園市龍潭區高原里7鄰高原路891號
+                            <br/> 營業時間：
+                                <br/> 交通資訊：
+                                <br/>※搭乘台鐵到達中壢後再轉新竹客運(中壢火車站對面)直達小人國。
+                                <br/>※ 搭乘高鐵至桃園站(南下)或新竹站(北上)後再轉計程車直達小人國。
+                                <br/>介紹:
+                                <br/>小人國主題樂園位於桃園市龍潭區，成立於民國73年7月7日，是台灣著名的主題遊樂園。
+                                <br/>小人國規劃出4種不同的遊樂主題，分別是『迷你世界』、『主題表演』、『遊樂設施』、
+                                <br/>『戲水樂園』。
+                                <br/>其中以『迷你世界』最著名，之後更成立佔地2500坪的室內遊樂設施主題遊樂園，是大朋友
+                                <br/>、小朋友假日玩樂，培養親子情感的好去處。
+                                <br/>小人國主題樂園－迷你世界
+                                <br/>小人國主題樂園的『迷你世界』是以台灣、中國大陸和世界各國的著名景觀建築模型為主題，
+                                <br/>每座模型皆以原尺寸的二十五分之一縮小呈現，不論是建築或景觀都栩栩如生。
+                                <br/>『迷你台灣』展列了台灣的精緻之美，舉凡高速公路、總統府、紅毛城、中正紀念堂、國父
+                                <br/>紀念館、傳統三合院等台灣建築。
+                                <br/>迷你中國』包含北京紫禁城、雅園、拙政園和可愛的熊貓，讓您不用出國就可以看到中國大
+                                <br/>陸的風土；『迷你亞洲』包含台灣和中國大
+                                陸的經典建築以外，還有日本東大寺、大阪城等
+                                <br/>，讓您在這裡就能玩遍世界各國。
+                                <br/>『迷你歐洲』有縮小版的比薩斜塔、沙特爾大教堂、巴黎歌劇院、聖巴西爾大教堂等等，讓
+                                <br/>您受到歐洲宗教的薰陶；『迷你美洲』則有美國四大總統塑像、NASA太空梭、自由女神像等
+                                <br/>代表美國自由民主精神的代表。
+                                <br/>小人國主題樂園－遊樂設施、主題表演
+                                <br/>小人國主題樂園園區中遊樂設施相當豐富，共有室內、室外的遊樂園，佔地數千坪，遊樂設
+                                <br/>施有『環球號小火車』、『摩天草苺』、『跳星星』、『搖滾船』、『飛飛機』、『荷蘭風
+                                <br/>琴馬車』、『維京船』、『狂飆幽浮』、『碰碰車』以及『兒童碰碰車』，適合大朋友、小
+                                <br/>朋友一起享樂。
+                                <br/>小人國主題樂園－轟浪水樂園
+                                <br/>『瘋狂急流』
+                                <br/>源自於義大利的遊樂設施，氣墊船在滑水道上經過許多刺激的機關讓您刺激一下。
+                                <br/>『霹靂滑艇』
+                                <br/>從約10層樓高度的滑水道滑下濺起6、7層的水花，溼透全身的快感只有親身體驗才能了解。
+                                <br/>『火箭親水城堡』
+                                <br/> 有溜滑梯等等水上遊樂設施，讓親子在此盡情悠遊，享受消暑的快感。
+                                <br/>此外在小人國戲水樂園內還有『大雷雨』、『尼羅灘』、『寶貝船長』等等設施，讓您消暑
+                                <br/>一下喔！ </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var taoyuanStation = {
+                    lat: 25.013202
+                    , lng: 121.214949
+                };
+                var chinaThemePark = {
+                    lat: 24.832186
+                    , lng: 121.185739
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: taoyuanStation
+                    , scrollwheel: false
+                    , zoom: 7
+                });
+                var directionsDisplay = new google.maps.DirectionsRenderer({
+                    map: map
+                });
+                // Set destination, origin and travel mode.
+                var request = {
+                    destination: chinaThemePark
+                    , origin: taoyuanStation
+                    , travelMode: 'DRIVING'
+                };
+                // Pass the directions request to the directions service.
+                var directionsService = new google.maps.DirectionsService();
+                directionsService.route(request, function (response, status) {
+                    if (status == 'OK') {
+                        // Display the route on the map.
+                        directionsDisplay.setDirections(response);
+                    }
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKvacU-4oh1bPIRa5vBNelmlClQzafjDQ&callback=initMap">
+        </script>
+</body>
+
+</html>

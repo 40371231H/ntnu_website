@@ -1,0 +1,20 @@
+#banner {
+    width:800px;
+    background-color: coral;
+}
+#nav {
+    width:150px;
+    background-color: gray;
+}
+#content {
+    width:500px;
+    background-color: white;
+}
+#supporting {
+    width:150px;
+    background-color: pink;
+}
+#footer {
+    width:800px;
+    background-color: coral;
+}

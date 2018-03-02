@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+  <title></title>
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    * {
+      /*   border: solid 1px; */
+      font-family: 微軟正黑體;
+      position: relative;
+    }
+
+    body {
+      background-image: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a6c1ee 100%);
+      background-image: -moz-linear-gradient(bottom, #fbc2eb 0%, #a6c1ee 100%);
+      background-image: -o-linear-gradient(bottom, #fbc2eb 0%, #a6c1ee 100%);
+      background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+      border-top: solid 20px #f73;
+      border-bottom: solid 20px #f73;
+
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .namecard {
+      width: 350px;
+      height: 200px;
+      padding: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 150px;
+      background-image: -webkit-linear-gradient(right, #434343 0%, black 100%);
+      background-image: -moz-linear-gradient(right, #434343 0%, black 100%);
+      background-image: -o-linear-gradient(right, #434343 0%, black 100%);
+      background-image: linear-gradient(to left, #434343 0%, black 100%);
+      letter-spacing: 2px;
+      font-weight: 100;
+      color: #eee;
+
+      overflow: hidden;
+      border: solid 1px #ddd;
+      border-radius: 20px;
+
+      box-shadow: 0px 25px 15px -20px rgba(0, 0, 0, 0.5);
+      /*   cursor: pointer;    */
+      transition: 1s;
+    }
+
+    .namecard:hover {
+      box-shadow: 0px 25px 25px -10px rgba(0, 0, 0, 0.3);
+      transform: scale(1.02);
+    }
+
+    .namecard h2 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    .namecard h2 span {
+      font-size: 12px;
+    }
+
+    .namecard h5 {
+      color: #e53;
+      font-weight: 600;
+    }
+
+    .namecard p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      position: absolute;
+      opacity: .5;
+    }
+
+    .circle1 {
+      width: 20px;
+      height: 20px;
+      left: 10px;
+      top: 10px;
+      background-color: #fd8;
+    }
+
+    .circle2 {
+      width: 60px;
+      height: 60px;
+      right: 160px;
+      bottom: -25px;
+      border: solid 5px #fd8;
+    }
+
+    .circle3 {
+      width: 300px;
+      height: 300px;
+      right: -125px;
+      top: 50px;
+      border: solid 10px #fd8;
+    }
+
+    .page_title {
+      text-align: center;
+      position: fixed;
+      color: #555;
+      bottom: 20px;
+      width: 100%;
+    }
+
+    .mark {
+      width: 350px;
+      font-size: 250px;
+      position: absolute;
+      bottom: 100px;
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mark">NAMECARD</div>
+
+  <a class="namecard" href="https://github.com/40371231h" target="_blank">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <h2>游政諺
+      <span>Cheng-Yen YU</span></h2>
+    <h5>國立臺灣師範大學</br>科技應用與人理資源發展學系－大四學生</h5>
+    <hr />
+    <p></p>
+  </a>
+
+
+  <h3 class="page_title"></h3>
+
+</body>
+
+</html>
